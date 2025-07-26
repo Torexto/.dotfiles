@@ -1,0 +1,43 @@
+@import url('../../.cache/wal/colors-waybar.css');
+* {
+    all: unset;
+    background-image: none;
+    margin: unset;
+    padding: unset;
+    transition: 200ms cubic-bezier(0, 0, 1, 1);
+}
+button {
+    font-family: 'JetBrainsMono Nerd Font';
+    background-color: alpha(@color9,1);
+    border-radius: 5px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+#lock, #shutdown, #logout, #reboot, #hibernate, #suspend {
+    margin : 5px 5px 5px 5px;
+    padding: 5px;
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0.6);
+}
+#lock {
+    background-image: image(url("../../.config/wlogout/lock.png"));
+}
+#shutdown {
+    background-image: image(url("../../.config/wlogout/power.png"));
+}
+#logout {
+    background-image: image(url("../../.config/wlogout/logout.png"));
+}
+#reboot {
+    background-image: image(url("../../.config/wlogout/restart.png"));
+}
+#hibernate {
+    background-image: image(url("../../.config/wlogout/hibernate.png"));
+}
+#suspend {
+    background-image: image(url("../../.config/wlogout/suspend.png"));
+}
+button:focus{
+    background-color: alpha(@color5,1);
+    color: #000000;
+    background-position:center;
+}
