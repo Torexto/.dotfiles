@@ -150,16 +150,15 @@ tooltip {
 #custom-colorpicker{
     padding: 0px 5px;
 }
-#custom-colorpicker,#cpu,#memory,#temperature{
+#custom-colorpicker,#cpu,#memory,#temperature,#bluetooth,#network{
+    margin: 0px 5px;
     padding: 0px 5px;
     transition: all .3s ease; 
     color:@color7;
-
 }
-#custom-endpoint{
+#custom-endpoint {
     color:transparent;
     text-shadow: 0px 0px 1.5px rgba(0, 0, 0, 1);
-
 }
 #tray{
     padding: 0px 5px;
