@@ -9,7 +9,7 @@ main() {
     selected_wallpaper=$(echo "$choice" | sed 's/^img://')
 
     swww img "$selected_wallpaper" --transition-type center --transition-fps 60 --transition-duration .5
-    wal -i "$selected_wallpaper" -n --cols16
+    wal -i "$selected_wallpaper" -n --cols16 --fg "#ffffff"
     swaync-client --reload-css
 }
 main
