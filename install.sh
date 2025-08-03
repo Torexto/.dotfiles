@@ -1,6 +1,6 @@
 #! /usr/bin/bash
-# sudo pacman -S kitty nvim hyprland gdm hypridle hyprlock fish waybar wofi swaync ttf-jetbrains-mono-nerd grim swww starship
-# yay -S wlogout pywal
+sudo pacman -S kitty nvim hyprland gdm hypridle hyprlock fish waybar wofi swaync ttf-jetbrains-mono-nerd grim swww starship
+yay -S wlogout pywal
 
 BACKUP=false
 while [[ $# -gt 0 ]]; do
@@ -37,7 +37,6 @@ for dir in "$CONFIG_SOURCE"/*; do
   target="$CONFIG_TARGET/$name"
 
   if [ "$BACKUP" = true ] && [ -e "$target" ]; then
-    # Generate unique backup path
     bak="$target.bak"
     i=1
     while [ -e "$bak" ]; do
@@ -54,5 +53,3 @@ for dir in "$CONFIG_SOURCE"/*; do
   echo "Copying $dir -> $target"
   cp -r "$dir" "$target"
 done
-
-# gsettings set org.gnome.desktop.interface icon-theme 'Cool-Dark-Icons'
