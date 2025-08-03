@@ -1,6 +1,6 @@
 #! /usr/bin/bash
-sudo pacman -S kitty nvim hyprland gdm hypridle hyprlock fish waybar wofi swaync ttf-jetbrains-mono-nerd grim swww starship
-yay -S wlogout pywal
+sudo pacman -S kitty nvim hyprland gdm hypridle hyprlock fish waybar wofi swaync ttf-jetbrains-mono-nerd grim swww starship nautilus slurp btop hyprpicker networkmanager pavucontrol blueman
+yay -S wlogout python-pywal16
 
 BACKUP=false
 while [[ $# -gt 0 ]]; do
