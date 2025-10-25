@@ -16,7 +16,7 @@ export LANG=pl_PL.UTF-8
 
 # EVALS
 eval "$(starship init zsh)"
-eval $(thefuck --alias)
+eval "$(thefuck --alias)"
 
 # EDITOR
 export EDITOR=nvim
@@ -33,4 +33,6 @@ export PATH=$PATH:$ANDROID_HOME/platform-tools:$ANDROID_HOME/emulator:$DOTNET_HO
 alias ff=fastfetch
 alias zc="nvim ~/.zshrc"
 alias gacp='git pull && git add . && git commit -m "UPDATE" && git push'
-
+alias s="pacman -Ss"
+alias u="sudo pacman -Syyu"
+alias i="sudo pacman -S"
