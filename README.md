@@ -1,6 +1,3 @@
-# install.sh -- install script
--b for backup
-
 ```bash
 sudo pacman -S --needed git base-devel
 git clone https://aur.archlinux.org/yay.git
