@@ -1,0 +1,11 @@
+[Trigger]
+Type = Package
+Operation = Install
+Operation = Upgrade
+Target = linux
+
+[Action]
+Description = Signing kernel...
+When = PostTransaction
+Exec = /usr/bin/sbsign --key /boot/loader/keys/DB.key --cert /boot/loader/keys/DB.crt --output /boot/vmlinuz-linux.signed /boot/vmlinuz-linux
+
