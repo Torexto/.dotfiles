@@ -1,22 +1,20 @@
 local nvlsp = require "nvchad.configs.lspconfig"
 nvlsp.defaults()
 
-local home = vim.fn.expand "~"
-
-vim.env.DOTNET_ROOT = home .. "/.dotnet"
-vim.env.PATH = vim.env.PATH .. ":" .. home .. "/.dotnet"
+local pid = vim.fn.getpid()
 
 local servers = {
   html = {},
   cssls = {},
   pyright = {},
-  rust_analyzer = {},
+  ["rust-analyzer"] = {},
   omnisharp = {
+    cmd = { "omnisharp", "--languageserver", "--hostPID", tostring(pid) },
     on_attach = nvlsp.on_attach,
     on_init = nvlsp.on_init,
     capabilities = nvlsp.capabilities,
   },
-  lua_ls = {},
+  lua = {},
 }
 
 for name, opts in pairs(servers) do

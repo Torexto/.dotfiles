@@ -1,0 +1,7 @@
+hl.on("hyprland.start", function()
+    hl.exec_cmd("hypridle")
+    hl.exec_cmd("hyprsunset")
+    hl.exec_cmd("discord")
+    hl.exec_cmd("spotify")
+    hl.exec_cmd("qs -c noctalia-shell")
+end)
