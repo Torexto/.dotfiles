@@ -1,42 +1,42 @@
 hl.config({
-    general = {
-        gaps_in = 5,
-        gaps_out = 10,
+	general = {
+		gaps_in = 5,
+		gaps_out = 10,
 
-        layout = "scrolling"
-    },
+		layout = "scrolling",
+	},
 
-    decoration = {
-        rounding = 20,
-        rounding_power = 2,
+	decoration = {
+		rounding = 20,
+		rounding_power = 2,
 
-        shadow = {
-            enabled = true,
-            range = 4,
-            render_power = 3,
-            color = 0x1a1a1aee,
-        },
+		shadow = {
+			enabled = true,
+			range = 4,
+			render_power = 3,
+			color = 0x1a1a1aee,
+		},
 
-        blur = {
-            enabled = true,
-            size = 3,
-            passes = 2,
-            vibrancy = 0.1696,
-        }
-    },
+		blur = {
+			enabled = true,
+			size = 3,
+			passes = 2,
+			vibrancy = 0.1696,
+		},
+	},
 
-    animations = {
-        enabled = true,
-    },
+	animations = {
+		enabled = true,
+	},
 
-    misc = {
-        force_default_wallpaper = -1,
-        disable_hyprland_logo   = false,
-    },
+	misc = {
+		force_default_wallpaper = 0,
+		disable_hyprland_logo = true,
+	},
 
-    scrolling = {
-        fullscreen_on_one_column = true,
-    },
+	scrolling = {
+		fullscreen_on_one_column = true,
+	},
 })
 
 hl.curve("easeOutQuint", { type = "bezier", points = { { 0.23, 1 }, { 0.32, 1 } } })
