@@ -56,7 +56,7 @@ hl.bind(mainMod .. " + equal", hl.dsp.exec_cmd("hyprctl dispatch resizeactive 20
 
 -- Screenshoty
 hl.bind(mainMod .. " + print", hl.dsp.exec_cmd('grim -g "$(slurp)" - | wl-copy'))
-hl.bind("print", hl.dsp.exec_cmd("grim - | wl-copy"))
+hl.bind("print", hl.dsp.exec_cmd("grim - | tee ~/Obrazy/Screenshots/$(date +%Y%m%d_%H%M%S).png | wl-copy"))
 
 -- Uruchamianie aplikacji
 hl.bind(mainMod .. " + T", hl.dsp.exec_cmd(config.terminal))
