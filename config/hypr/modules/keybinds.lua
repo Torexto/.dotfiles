@@ -46,7 +46,7 @@ hl.bind("XF86AudioPrev", hl.dsp.exec_cmd("playerctl previous"), playerOpts)
 
 -- Zarządzanie oknami
 hl.bind(mainMod .. " + Q", hl.dsp.window.close())
-hl.bind(mainMod .. " + V", hl.dsp.window.float({ action = "toggle" }))
+hl.bind(mainMod .. " + ALT + V", hl.dsp.window.float({ action = "toggle" }))
 hl.bind(mainMod .. " + P", hl.dsp.window.pseudo())
 -- hl.bind(mainMod .. " + J", hl.dsp.layout("togglesplit"))
 
@@ -68,5 +68,4 @@ hl.bind(mainMod .. " + M", hl.dsp.exec_cmd(config.controls))
 hl.bind(mainMod .. " + L", hl.dsp.exec_cmd(config.lockscreen))
 hl.bind(mainMod .. " + D", hl.dsp.exec_cmd("discord"))
 hl.bind(mainMod .. " + C", hl.dsp.exec_cmd(config.editor))
-
--- hl.bind("SUPER + SHIFT + 201", hl.dsp.exec_cmd(config.ai), { locked = true })
+hl.bind(mainMod .. " + V", hl.dsp.exec_cmd(config.clipboard))
