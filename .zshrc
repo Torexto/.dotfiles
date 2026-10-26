@@ -1,6 +1,6 @@
 # OH MY ZSH
 export ZSH="$HOME/.oh-my-zsh"
-plugins=(git zsh-autosuggestions zsh-syntax-highlighting)
+plugins=(git sudo extract zsh-autosuggestions zsh-syntax-highlighting)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -24,7 +24,7 @@ export EDITOR=nvim
 # PATH
 export ANDROID_HOME="$HOME/.sdk/Android"
 export DOTNET_HOME="$HOME/.dotnet"
-export JAVA_HOME="/usr/lib/jvm/java-17-openjdk"
+export JAVA_HOME="/usr/lib/jvm/java-21-openjdk"
 export BUN_HOME="$HOME/.bun"
 
 export PATH=$PATH:$ANDROID_HOME/platform-tools:$ANDROID_HOME/emulator:$DOTNET_HOME:$BUN_HOME/bin
@@ -32,7 +32,11 @@ export PATH=$PATH:$ANDROID_HOME/platform-tools:$ANDROID_HOME/emulator:$DOTNET_HO
 # ALIAS
 alias ff=fastfetch
 alias zc="nvim ~/.zshrc"
+alias hc="cd ~/.config/hypr; nvim hyprland.lua"
 alias gacp='git pull && git add . && git commit -m "UPDATE" && git push'
 alias s="pacman -Ss"
 alias u="sudo pacman -Syyu"
 alias i="sudo pacman -S"
+
+# Added by the Postman CLI installer
+export PATH='/home/torexto/.local/bin':"$PATH"
